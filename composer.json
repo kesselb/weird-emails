@@ -1,0 +1,6 @@
+{
+    "require": {
+        "bytestream/horde-mime": "^2.13",
+        "nextcloud/horde-smtp": "^1.0"
+    }
+}
