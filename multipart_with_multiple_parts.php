@@ -37,7 +37,7 @@ $mail->setBasePart($basePart);
 $transport = new Horde_Mail_Transport_Smtphorde([
     'localhost' => 'localhost',
     'host' => 'localhost',
-    'port' => 25,
+    'port' => 1025,
     'username' => 'alice@test.local',
     'password' => 'alice',
     'secure' => false
