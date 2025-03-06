@@ -15,7 +15,7 @@ $location = Schema::virtualLocation()
     ->name('Talk');
 $event = Schema::event()
     ->name('Itinerary brainstorming')
-    ->startDate((clone $today)->add(new DateInterval('P1D')))
+    ->startDate((clone $today)->add(new DateInterval('P14D')))
     ->location($location);
 $eventReservation = Schema::eventReservation()
     ->reservationId('3000-1')

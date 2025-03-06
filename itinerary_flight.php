@@ -24,9 +24,9 @@ $flight = Schema::flight()
     ->flightNumber('1000')
     ->provider($airline)
     ->departureAirport($departureAirport)
-    ->departureTime((clone $today)->add(new DateInterval('P1D')))
+    ->departureTime((clone $today)->add(new DateInterval('P14D')))
     ->arrivalAirport($arrivalAirport)
-    ->arrivalTime((clone $today)->add(new DateInterval('P1DT2H')));
+    ->arrivalTime((clone $today)->add(new DateInterval('P14DT2H')));
 $flightReservation = Schema::flightReservation()
     ->reservationId('1000-1')
     ->reservationStatus(\Spatie\SchemaOrg\ReservationStatusType::ReservationConfirmed)

@@ -15,9 +15,9 @@ $arrivalStation = Schema::trainStation()
     ->name('Paris');
 $trainTrip = Schema::trainTrip()
     ->departureStation($departureStation)
-    ->departureTime((clone $today)->add(new DateInterval('P1D')))
+    ->departureTime((clone $today)->add(new DateInterval('P14D')))
     ->arrivalStation($arrivalStation)
-    ->arrivalTime((clone $today)->add(new DateInterval('P1DT2H')));
+    ->arrivalTime((clone $today)->add(new DateInterval('P14DT2H')));
 $trainReservation = Schema::trainReservation()
     ->reservationId('2000-1')
     ->reservationStatus(\Spatie\SchemaOrg\ReservationStatusType::ReservationConfirmed)
