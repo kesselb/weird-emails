@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Spatie\SchemaOrg\Schema;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../config.php';
 
 $today = new DateTime();
 $today->setTime(14, 0, 0);
@@ -41,19 +41,10 @@ $basePart->isBasePart(true);
 
 $mail = new Horde_Mime_Mail();
 $mail->addHeaders([
-    'From' => 'alice@test.local',
-    'To' => 'jane@doe.local',
+    'From' => $defaultFrom,
+    'To' =>  $defaultTo,
     'Subject' => 'Itinerary brainstorming',
 ]);
 $mail->setBasePart($basePart);
-
-$transport = new Horde_Mail_Transport_Smtphorde([
-    'localhost' => 'localhost',
-    'host' => 'localhost',
-    'port' => 1025,
-    'username' => 'alice@test.local',
-    'password' => 'alice',
-    'secure' => false
-]);
 
 $mail->send($transport, false, false);

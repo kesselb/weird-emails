@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../config.php';
 
 $basePart = new Horde_Mime_Part();
 $basePart->setType('multipart/mixed');
@@ -28,19 +28,10 @@ $basePart->isBasePart(true);
 
 $mail = new Horde_Mime_Mail();
 $mail->addHeaders([
-    'From' => 'alice@test.local',
-    'To' => 'jane@doe.local',
+    'From' => $defaultFrom,
+    'To' =>  $defaultTo,
     'Subject' => 'Multipart with multiple parts',
 ]);
 $mail->setBasePart($basePart);
-
-$transport = new Horde_Mail_Transport_Smtphorde([
-    'localhost' => 'localhost',
-    'host' => 'localhost',
-    'port' => 1025,
-    'username' => 'alice@test.local',
-    'password' => 'alice',
-    'secure' => false
-]);
 
 $mail->send($transport, false, false);

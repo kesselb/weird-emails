@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../config.php';
 
 $contents = '<html><meta http-equiv="content-type" content="text/html; charset=UTF-8"><body>Hi, email with a quoted from header</body><html>';
 
@@ -19,19 +19,19 @@ $basePart->isBasePart(true);
 
 $mail = new Horde_Mime_Mail();
 $mail->addHeaders([
-    'From' => "'alice@test.local'",
-    'To' => 'jane@doe.local',
+    'From' => "'walter@static.test'",
+    'To' =>  'wendy@static.test',
     'Subject' => 'Quoted from',
 ]);
 $mail->setBasePart($basePart);
 
-$transport = new Horde_Mail_Transport_Smtphorde([
+// docker-imap-devel wont accept emails using a from header with quotes around
+// workaround: use mailpit as recipient and export/import manually
+$localTransport = new Horde_Mail_Transport_Smtphorde([
     'localhost' => 'localhost',
     'host' => 'localhost',
     'port' => 1025,
-    'username' => 'alice@test.local',
-    'password' => 'alice',
-    'secure' => false
+    'secure' => false,
 ]);
 
-$mail->send($transport, false, false);
+$mail->send($localTransport, false, false);
