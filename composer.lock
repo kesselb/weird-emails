@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a2af519ab01305467fb12ef875bfa03",
+    "content-hash": "6f5ea927b112956d120111d4f9f2870d",
     "packages": [
         {
             "name": "bytestream/horde-exception",
@@ -165,16 +165,16 @@
         },
         {
             "name": "bytestream/horde-mail",
-            "version": "v2.7.1",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bytestream/Mail.git",
-                "reference": "73f5798734caaf7c6aa3e7348ddc9e0d0b6a768e"
+                "reference": "5054666fe1a43f86a85e911111c115a133d80334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bytestream/Mail/zipball/73f5798734caaf7c6aa3e7348ddc9e0d0b6a768e",
-                "reference": "73f5798734caaf7c6aa3e7348ddc9e0d0b6a768e",
+                "url": "https://api.github.com/repos/bytestream/Mail/zipball/5054666fe1a43f86a85e911111c115a133d80334",
+                "reference": "5054666fe1a43f86a85e911111c115a133d80334",
                 "shasum": ""
             },
             "require": {
@@ -214,22 +214,22 @@
             "description": "Horde mail library",
             "homepage": "https://www.horde.org/libraries/Horde_Mail",
             "support": {
-                "source": "https://github.com/bytestream/Mail/tree/v2.7.1"
+                "source": "https://github.com/bytestream/Mail/tree/v2.7.2"
             },
-            "time": "2022-05-23T09:07:13+00:00"
+            "time": "2026-02-12T11:00:50+00:00"
         },
         {
             "name": "bytestream/horde-mime",
-            "version": "v2.13.2",
+            "version": "v2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bytestream/Mime.git",
-                "reference": "63eb21725983e437536d457135719df5a42e3cf4"
+                "reference": "6cd0216b850ea811ebc543c4b5731ef3a256ba89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bytestream/Mime/zipball/63eb21725983e437536d457135719df5a42e3cf4",
-                "reference": "63eb21725983e437536d457135719df5a42e3cf4",
+                "url": "https://api.github.com/repos/bytestream/Mime/zipball/6cd0216b850ea811ebc543c4b5731ef3a256ba89",
+                "reference": "6cd0216b850ea811ebc543c4b5731ef3a256ba89",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 "bytestream/horde-text-flowed": "^2",
                 "bytestream/horde-translation": "^2.2",
                 "bytestream/horde-util": "^2",
-                "php": "^7.4 || ^8.0"
+                "php": "^8.0"
             },
             "require-dev": {
                 "bytestream/horde-text-filter": "^2.4",
@@ -278,9 +278,9 @@
             "description": "MIME library",
             "homepage": "https://www.horde.org/libraries/Horde_Mime",
             "support": {
-                "source": "https://github.com/bytestream/Mime/tree/v2.13.2"
+                "source": "https://github.com/bytestream/Mime/tree/v2.14.1"
             },
-            "time": "2024-08-12T14:10:09+00:00"
+            "time": "2026-03-30T09:58:39+00:00"
         },
         {
             "name": "bytestream/horde-socket-client",
@@ -619,16 +619,16 @@
         },
         {
             "name": "bytestream/horde-util",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bytestream/Util.git",
-                "reference": "352b5aee46e2df0b85961c1bde47c03a6b440224"
+                "reference": "45a9c3c14e70eec9df5d117a2d4941b097872672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bytestream/Util/zipball/352b5aee46e2df0b85961c1bde47c03a6b440224",
-                "reference": "352b5aee46e2df0b85961c1bde47c03a6b440224",
+                "url": "https://api.github.com/repos/bytestream/Util/zipball/45a9c3c14e70eec9df5d117a2d4941b097872672",
+                "reference": "45a9c3c14e70eec9df5d117a2d4941b097872672",
                 "shasum": ""
             },
             "require": {
@@ -669,22 +669,22 @@
             "description": "Horde utility library",
             "homepage": "https://www.horde.org/libraries/Horde_Util",
             "support": {
-                "source": "https://github.com/bytestream/Util/tree/v2.8.0"
+                "source": "https://github.com/bytestream/Util/tree/v2.8.1"
             },
-            "time": "2024-09-13T10:21:29+00:00"
+            "time": "2026-02-12T14:33:23+00:00"
         },
         {
             "name": "nextcloud/horde-smtp",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nextcloud/horde-smtp.git",
-                "reference": "29b9a574136a067a206def77078cacc8f6acf3e5"
+                "reference": "de5281cefd271b709ffd3b64c5bf3a755283042e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nextcloud/horde-smtp/zipball/29b9a574136a067a206def77078cacc8f6acf3e5",
-                "reference": "29b9a574136a067a206def77078cacc8f6acf3e5",
+                "url": "https://api.github.com/repos/nextcloud/horde-smtp/zipball/de5281cefd271b709ffd3b64c5bf3a755283042e",
+                "reference": "de5281cefd271b709ffd3b64c5bf3a755283042e",
                 "shasum": ""
             },
             "require": {
@@ -724,9 +724,9 @@
             "description": "Horde SMTP client",
             "homepage": "https://www.horde.org",
             "support": {
-                "source": "https://github.com/nextcloud/horde-smtp/tree/v1.0.2"
+                "source": "https://github.com/nextcloud/horde-smtp/tree/v1.0.3"
             },
-            "time": "2022-12-14T16:39:58+00:00"
+            "time": "2026-02-09T17:25:55+00:00"
         },
         {
             "name": "spatie/schema-org",
@@ -802,7 +802,60 @@
             "time": "2025-01-31T14:54:12+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "php-cs-fixer/shim",
+            "version": "v3.94.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-CS-Fixer/shim.git",
+                "reference": "80fd29f44a736136a2f05bae5464816a444b91d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/80fd29f44a736136a2f05bae5464816a444b91d1",
+                "reference": "80fd29f44a736136a2f05bae5464816a444b91d1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "replace": {
+                "friendsofphp/php-cs-fixer": "self.version"
+            },
+            "suggest": {
+                "ext-dom": "For handling output formats in XML",
+                "ext-mbstring": "For handling non-UTF8 characters."
+            },
+            "bin": [
+                "php-cs-fixer",
+                "php-cs-fixer.phar"
+            ],
+            "type": "application",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Dariusz Rumiński",
+                    "email": "dariusz.ruminski@gmail.com"
+                }
+            ],
+            "description": "A tool to automatically fix PHP code style",
+            "support": {
+                "issues": "https://github.com/PHP-CS-Fixer/shim/issues",
+                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.94.2"
+            },
+            "time": "2026-02-20T16:14:17+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},
@@ -810,5 +863,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
